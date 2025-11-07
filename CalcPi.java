@@ -12,7 +12,8 @@ public class CalcPi {
 			sum = sum-fraction;
 			mechane = mechane+2;
 		}
+		double sumA = sum*4;
 		System.out.println("pi according to Java: " + Math.PI);
-		System.out.println("pi, approximated: " + sum*4);
+		System.out.println("pi, approximated: " + sumA);
 	}
 }
