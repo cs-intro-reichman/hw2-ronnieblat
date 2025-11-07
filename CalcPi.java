@@ -5,13 +5,14 @@ public class CalcPi {
 		int mechane=1;
 		double sum = (double) 0;
 		for (int i=1; i<=n; i++){
+			double fraction = 1.0/mechane;
 			if (i%2 == 1)
-				sum = (double)(sum + (1.0/mechane));
+				sum = sum+fraction;
 			else
-			sum = (double)(sum - (1.0/mechane));
+			sum = sum-fraction;
 			mechane = mechane+2;
 		}
-		System.out.println("pi according to java: " + Math.PI);
-		System.out.println("pi, approximated:     " + sum*4);
+		System.out.println("pi according to Java: " + Math.PI);
+		System.out.println("pi, approximated: " + sum*4);
 	}
 }
